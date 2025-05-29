@@ -4,7 +4,7 @@ def student_grades(arr_list):
     unique_scores = sorted(set([score for name, score in ascending_scores]), reverse=True)
 
     # find the lowest grade and second lowest grade
-    lowest_grade = ascending_scores[-1][-1]
+    lowest_grade = ascending_scores[-1][-1] # same as: or unique_scores[-1] (not necessary to include line)
     second_lowest_grade = unique_scores[-2]
     
     # find names of students with the second lowest grade
