@@ -13,7 +13,7 @@ def print_rangoli(size):
         line = row.center(4*size - 3, '-') # (4*size - 3, '-') provides each line's width symetrically
         lines.append(line)
 
-    full_pattern = lines[::-1][1:] + lines
+    full_pattern = lines[:size-1][::-1] + lines
 
     return '\n'.join(full_pattern)
 
