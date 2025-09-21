@@ -1,4 +1,6 @@
-thislist = ["apple", "banana", "cherry"]
+mylist = ['apple', 'banana', 'cherry']
+mylist.insert(0, 'kiwi')
 
-for i in range(len(thislist)):
-    print(thislist[i] + " BOMBA")
+print(type(mylist))
+print(dir(mylist))
+print(mylist)
