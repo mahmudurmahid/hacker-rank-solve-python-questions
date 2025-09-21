@@ -1,5 +1,5 @@
 def solve(s):
-    capitalized_name =  ' '.join(word.capitalize() for word in s.split(' ')) 
+    capitalized_name =  ' '.join(name.capitalize() for name in s.split(' ')) 
 
     return capitalized_name
 
