@@ -1,4 +1,4 @@
-word = "banana"
+thislist = ["apple", "banana", "cherry"]
 
-for x in range(len(word)):
-    print(word[x])
+for i in range(len(thislist)):
+    print(thislist[i] + " BOMBA")
