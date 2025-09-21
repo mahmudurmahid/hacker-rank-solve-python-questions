@@ -1,6 +1,10 @@
-mylist = ['apple', 'banana', 'cherry']
-mylist.insert(0, 'kiwi')
+def vowel_counter(s):
+    vowels = "AEIOU"
 
-print(type(mylist))
-print(dir(mylist))
-print(mylist)
+    for i in range(len(s)):
+        if s[i] in vowels:
+            print(s[i])
+
+s = "BANENI"
+result = vowel_counter(s)
+print(result)
