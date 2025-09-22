@@ -1,10 +1,10 @@
-def vowel_counter(s):
-    vowels = "AEIOU"
+def changecase(func):
+    def myinner():
+       return func().upper()
+    return myinner
 
-    for i in range(len(s)):
-        if s[i] in vowels:
-            print(s[i])
+@changecase
+def myfunction():
+    return "Hello Sally"
 
-s = "BANENI"
-result = vowel_counter(s)
-print(result)
+print(myfunction())
